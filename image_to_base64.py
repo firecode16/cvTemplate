@@ -25,7 +25,7 @@ def image_to_base64(image_path: str, output_file: str):
 
 if __name__ == "__main__":
     # Ajusta estas rutas
-    IMAGE_PATH = "...//profile.png"
+    IMAGE_PATH = "...//profile.jpg"
     OUTPUT_FILE = "...//cvTemplate//profile_base64.html"
 
     image_to_base64(IMAGE_PATH, OUTPUT_FILE)
