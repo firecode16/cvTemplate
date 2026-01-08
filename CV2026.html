@@ -131,16 +131,25 @@
       }
     }
     
-    .contact div {
+    .contact div, .contact a {
       display: flex;
       align-items: center;
       gap: 8px;
       font-size: 0.9rem;
       margin-bottom: 5px;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .contact a:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
     }
     
     @media (min-width: 768px) {
-      .contact div {
+      .contact div, .contact a {
         font-size: .95rem;
         margin-bottom: 0;
       }
@@ -369,6 +378,12 @@
       align-items: center;
       box-shadow: 0 6px 18px rgba(0, 0, 0, .3);
       z-index: 100;
+      transition: all 0.3s ease;
+    }
+    
+    .print-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
     }
     
     @media (min-width: 768px) {
@@ -386,10 +401,13 @@
       color: #1565C0;
       text-decoration: none;
       word-break: break-all;
+      cursor: pointer;
+      transition: all 0.2s ease;
     }
     
     a:hover {
       text-decoration: underline;
+      opacity: 0.9;
     }
     
     /* Estilos para impresión */
@@ -463,7 +481,7 @@
         font-size: 1.1rem;
       }
       
-      .contact div {
+      .contact div, .contact a {
         font-size: 0.8rem;
       }
       
@@ -492,7 +510,9 @@
     <h2>Java Full Stack</h2>
     <div class="contact">
       <div><i class="fas fa-envelope"></i> hfredi35@gmail.com</div>
-      <div><i class="fab fa-whatsapp"></i> 8117975347</div>
+      <a href="https://wa.me/8117975347?text=Hola%20Fredi." target="_blank" rel="noopener" title="Enviar mensaje por WhatsApp">
+        <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+      </a>
       <div><i class="fab fa-linkedin"></i> 
         <span class="mobile-break">linkedin.com/in/</span>fredi-hernandez-888944aa/
       </div>
@@ -603,7 +623,7 @@
   </div>
 
   <br>
-  <p><strong>Proyecto 2:</strong> www.amway.com (E-Commerce)</p>
+  <p><strong>Proyecto 2:</strong> www.amway.com (e-commerce)</p>
   <div class="projects">
     <ul>
       <li>Aplicación de Brand Standards en el checkout.</li>
